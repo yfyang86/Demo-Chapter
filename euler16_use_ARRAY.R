@@ -13,9 +13,13 @@ f16L <- Vectorize(function(n){
   if (n<=0) stop('must be >0')
   if (n>3320) stop('Temp: n<=3320')
   dig.num=rep(0L,1000)
-  # 38: rev(digits)
-  digits <- as.integer(unlist(strsplit(as.character(2), split = "")))
-  dig.num[1] <- rev(digits)
+  dig.num[1] <- 2
+  # initialization, using dictionary
+  # eg: we could start with
+  # as.integer(unlist(strsplit(as.character(2^20), split = "")))
+  # digits <- as.integer(unlist(strsplit(as.character(2), split = "")))
+  # dig.num[1] <- rev(digits)
+  #  them i in 1:(n-20)
   for (i in 1:(n-1)){
     dig2 <- dig.num *2
     dig3 <- dig2 %%10
