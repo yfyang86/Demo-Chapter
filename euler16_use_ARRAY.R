@@ -8,6 +8,7 @@
 
 
 f16L <- Vectorize(function(n){
+  if (n==1) return (2);
   if (!is.integer(n)) stop("must be int");
   if (n<=0) stop('must be >0')
   if (n>3320) stop('Temp: n<=3320')
