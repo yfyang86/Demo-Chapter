@@ -15,5 +15,6 @@ Programming skills in R
     ![http://sweb.uky.edu/~yya234](./data/th03_1.png)
 7. ```barplot_stackbar.R``` gives an example to create complicated bar plot.
 	![bar](./data/stackbar.png)
-8. ...
+8. ref: deGPS <a href="https://code.google.com/p/degps-rna-seq/">https://raw.githubusercontent.com/LL-LAB-MCW/deGPS-source-file/master/Google-logo.png</a>
+9. 
 
