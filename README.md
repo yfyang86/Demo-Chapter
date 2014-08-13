@@ -10,9 +10,9 @@ Programming skills in R
 5. ```Rmd_Tab_Proctoring.Rmd``` Shows the way to use css in Rmd.
 6. ```cchist_PLOT.R ``` shows an interesting histogram using other jpg as background. The idea is from internet. As a touhou fan, I used a touhou picture.
 
-    [ori](./data/th03.jpg)
+    ![ori](./data/th03.jpg)
 	
-    ![mod](./data/th03_1.png)
+    ![http://sweb.uky.edu/~yya234](./data/th03_1.png)
 7. ```barplot_stackbar.R``` gives an example to create complicated bar plot.
 	![bar](./data/stackbar.png)
 8. ...
