@@ -9,11 +9,8 @@ Programming skills in R
 4. ```CharMat_SetLocale.R``` (1) Uses utf-8 in R-studio; (2) The idea is from a renren post.
 5. ```Rmd_Tab_Proctoring.Rmd``` Shows the way to use css in Rmd.
 6. ```cchist_PLOT.R ``` shows an interesting histogram using other jpg as background. The idea is from internet. As a touhou fan, I used a touhou picture.
-<center><ul>
-<li><img src="./data/th03.jpg"></li>
-<li><img src="./data/th03_1.png"></li>
-</ul>
-</center>
+  <img align="center" src="./data/th03.jpg">
+  <img align="center" src="./data/th03_1.png">
 7. ```barplot_stackbar.R``` gives an example to create complicated bar plot.
 	![bar](./data/stackbar.png)
 8. cc's deGPS <a href="https://code.google.com/p/degps-rna-seq/"><img src="https://raw.githubusercontent.com/LL-LAB-MCW/deGPS-source-file/master/Google-logo.png"></a>. 
