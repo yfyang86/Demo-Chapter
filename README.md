@@ -11,7 +11,8 @@ Programming skills in R
 6. ```cchist_PLOT.R ``` shows an interesting histogram using other jpg as background. The idea is from internet. As a touhou fan, I used a touhou picture. Check appendix for demo output.
 7. ```barplot_stackbar.R``` gives an example to create complicated bar plot. Check appendix for demo output.
 8. cc's deGPS <a href="https://code.google.com/p/degps-rna-seq/"><img src="https://raw.githubusercontent.com/LL-LAB-MCW/deGPS-source-file/master/Google-logo.png"></a>. 
-9. 
+9.`yyPLOT_autoadj.R` Will automatically adjust the x-axis.
+
 
 Appendix
 =======
@@ -26,3 +27,6 @@ barplot
 -----
 ![bar](./data/stackbar.png)
 
+yyPLOT_autoadj output
+---------
+![plotadj](./data/plogadj.png)
