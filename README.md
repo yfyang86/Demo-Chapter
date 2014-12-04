@@ -12,6 +12,7 @@ Programming skills in R
 7. ```barplot_stackbar.R``` gives an example to create complicated bar plot. Check appendix for demo output.
 8. cc's deGPS <a href="https://code.google.com/p/degps-rna-seq/"><img src="https://raw.githubusercontent.com/LL-LAB-MCW/deGPS-source-file/master/Google-logo.png"></a>.     
 9. `yyPLOT_autoadj.R` Will automatically adjust the x-axis.
+10. `lock_unlock` shows an example use lock/unlock to control `<<-`,`<-` and the global variables. 
 
 
 Appendix
