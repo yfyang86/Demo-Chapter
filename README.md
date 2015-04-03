@@ -14,6 +14,10 @@ Programming skills in R
 9. `yyPLOT_autoadj.R` Will automatically adjust the x-axis.
 10. `lock_unlock` shows an example use lock/unlock to control `<<-`,`<-` and the global variables.
 11. `Dec2IP_bitwise.R` is an example of bitwise operation which turns the decimal system IP to normal xxx.xxx.xxx.xxx(32bits) version.
+12. `Twenty four Game` is an interesting example shows 
+    a. Recusive in R
+	b. Relation to Lisp/Scheme
+
 
 
 Appendix
