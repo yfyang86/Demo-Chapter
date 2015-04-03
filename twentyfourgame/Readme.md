@@ -39,6 +39,13 @@ op1(op2(a,b),op3(c,d))
 
 # Appendix
 
+## HOWTO: pandoc markdown with line number
+
+```bash
+pandoc --highlight-style tango --listings -H /home/yifan/bin/tex/templateSyn.tex Readme.md -o Readme.pdf
+```
+
+
 ## dots file
 
 ```dot
