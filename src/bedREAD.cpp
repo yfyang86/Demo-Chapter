@@ -50,7 +50,7 @@ std::vector<uint8_t> bedread(
     std::cout<<"Len "<<tmpN4<<"\toffset "<<PSG<<"\t Scale: "<<scale<<std::endl;
     std::ifstream uuid(bedfilename.c_str(),std::ios::in | std::ios::binary);
     // seek
-    uuid.seekg(PSG,uuid.end);
+    uuid.seekg(PSG,std::ios::cur);
     long int ii=0;
     if (uuid.is_open()){
       for (int i=0;i<tmpN4;i++){
