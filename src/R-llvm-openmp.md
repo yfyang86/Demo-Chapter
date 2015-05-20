@@ -10,7 +10,7 @@ about this. There are even long blogs discussing using openmp in R, for example 
 1. on Linux;
 2. on Mac/Windows with >= GCC-4.7.2 tool chain;
 
-Non talks about a Mac-llvm method. Fairly enough, most Mac people around me even don't know there is a terminal or Mac is a kind of BSD. We spend a whole afternoon on compiling this LLVM-OPENMP-R tool chain. Here are some remarks.
+Non talks about a Mac-llvm method. Fairly enough, most Mac people around me even don't know there is a terminal or Mac is a kind of BSD. We spent a whole afternoon on compiling this LLVM-OPENMP-R tool chain. Here are some remarks.
 
 0. Install X-code/X-code command line tools.
 1. Follows this [Git](https://clang-omp.github.io/) page to install clang-omp.
@@ -50,7 +50,6 @@ Then copy the dylib and `export/common/include/*.h` to `/usr/local/lib` and `/us
 | OS X*       |   Yes(1,3,4)  |  No         | Yes(4,6,7)   |
 | Windows* OS |   Yes(1,4)    |  No         | No           |
 
-  
 2. Now you may test a simple `t1.cpp` code:
  
  ```cpp
@@ -79,10 +78,10 @@ Then copy the dylib and `export/common/include/*.h` to `/usr/local/lib` and `/us
  
  ```bash
  CC=/usr/loca/bin/clang -I/usr/include/c/include/x.y.z
- GCC=/usr/loca/bin/clang -I/usr/include/c/include/x.y.z
+ CXX=/usr/loca/bin/clang++ -I/usr/include/c/include/x.y.z
  ```
  
- Here `CC=/usr/loca/bin/clang -I/usr/include/c/include/x.y.z` is the path (exclude the iostream part) we locates just now. By doing this, `CC` and `GCC` won't disturb the system variables.
+ Here `/usr/include/c/include/x.y.z` is the path (exclude the iostream part) we locates just now. By doing this, `CC` and `GCC` won't disturb the system variables.
  
 4. Now move on to your pacakge's `src` folder. Modified the Makevars like this:
  
