@@ -14,10 +14,10 @@ Programming skills in R
 9. `yyPLOT_autoadj.R` Will automatically adjust the x-axis.
 10. `lock_unlock` shows an example use lock/unlock to control `<<-`,`<-` and the global variables.
 11. `Dec2IP_bitwise.R` is an example of bitwise operation which turns the decimal system IP to normal xxx.xxx.xxx.xxx(32bits) version.
-12. `Twenty four Game` is an interesting example shows 
+12. `Twenty four Game` is an interesting example shows
     a. Recusive in R
 	b. Relation to Lisp/Scheme
-
+13. `2048` is the 2048 Game in R, see details on my blog [here](https://yifanyang.wordpress.com/2015/11/03/2048/). Use `wasd<cr>` to input, `n` to quit.
 
 
 Appendix
@@ -36,3 +36,7 @@ barplot
 yyPLOT_autoadj output
 ---------
 ![plotadj](./data/plogadj.png)
+
+2048
+--------
+![2048](./data/2048.png)
