@@ -25,7 +25,9 @@ g/sum(g)
 eigen(A) -> AA
 AA1 = AA$vectors
 AA2 = diag(AA$values)
-# Jordan Matrix Decomposition
+# Jordan Matrix Decomposition, eigen value differs, i.e
+# algebraic multiplicity = dim(A)
+# Jordan Form is simply:
 AA1%*%AA2%*%t(AA1)
 # check the eigen value
 ###> diag(AA2)
