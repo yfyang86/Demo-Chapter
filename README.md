@@ -40,3 +40,7 @@ yyPLOT_autoadj output
 2048
 --------
 ![2048](./data/2048.png)
+
+Colorized Plot
+---------
+![coloploy](./src/data/colorized_plot.png)
