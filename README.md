@@ -17,8 +17,10 @@ Programming skills in R
 12. `Twenty four Game` is an interesting example shows
     a. Recusive in R
 	b. Relation to Lisp/Scheme
-13. `2048` is the 2048 Game in R, see details on my blog [here](https://yifanyang.wordpress.com/2015/11/03/2048/). Use `wasd<cr>` to input, `n` to quit.
-
+13. `2048` is the 2048 Game in R, see details on my blog [here](https://yifanyang.wordpress.com/2015/11/03/2048/). Use `wasd<cr>` to input, `n` to quit.    
+14. `circulant_Mat.R`, `FaiTossToAnyUnfair.R`        
+15. `colorized_plot.R` colorized plot that distinguished by y value.    
+16. 'cellplot'
 
 Appendix
 =======
@@ -44,3 +46,7 @@ yyPLOT_autoadj output
 Colorized Plot
 ---------
 ![coloploy](./src/data/colorized_plot.png)
+
+Cell Plot (example)
+---------
+![cell](./data/cellplot.png)
