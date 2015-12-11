@@ -39,11 +39,11 @@ colorizedplot <- function(x,x_axis=1:length(x),add =F, cols = rainbow(100), rev 
       y.width <- y.lower[2] - y.lower[1]
       y.upper <- y.lower + y.width
       if (rev){
-        x.left <- x_axis[1] + x_axis[2]* (1-.25)*0.1314
-        x.right <- x_axis[1] + x_axis[2] * 0.125
+        x.left <- x_axis[1] - diff(range(x_axis))*0.05 
+        x.right <- x_axis[1] - diff(range(x_axis))*0.075 
       }else{
-        x.left <- x_axis[LLL] + x_axis[LLL-1]* (1-.25)*0.1314
-        x.right <- x_axis[LLL] + x_axis[LLL-1] * 0.125
+        x.left <- x_axis[LLL] + diff(range(x_axis))*0.05 
+        x.right <- x_axis[LLL] + diff(range(x_axis))*0.075 
       }
 
       rect(x.left, y.lower, x.right, y.upper,
