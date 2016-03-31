@@ -20,7 +20,8 @@ Programming skills in R
 13. `2048` is the 2048 Game in R, see details on my blog [here](https://yifanyang.wordpress.com/2015/11/03/2048/). Use `wasd<cr>` to input, `n` to quit.    
 14. `circulant_Mat.R`, `FaiTossToAnyUnfair.R`        
 15. `colorized_plot.R` colorized plot that distinguished by y value.    
-16. 'cellplot'
+16. 'cellplot'    
+17. XKCD
 
 Appendix
 =======
@@ -50,3 +51,11 @@ Colorized Plot
 Cell Plot (example)
 ---------
 ![cell](./data/cellplot.png)
+
+XKCD fonts and plot
+-------------
+
+![font](./data/xkcd.png)
+
+![xkcddemo](./data/xkcd_demo.png)
+
