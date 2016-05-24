@@ -62,5 +62,5 @@ XKCD fonts and plot
 
 LOL
 -------------
-![lol](./src/cc_lolMap/Pictures/out.gif)
+![lol](./src/cc_lolMap/out.gif)
 
