@@ -143,21 +143,30 @@ ff <- function(s1=0.8,s2=0.8,mat=mat){
   mean((mat[,1]<=quantile(mat[,1],probs = s1))&(mat[,2]<= quantile(mat[,2],probs = s2)))
 }
 
-fff <- function(mat,step = 1
-,ep = 0.05
-,learning_rate=0.9
-,oo = rep(0.775,2)
-,rr = 0.75 ){
-  for (step in 1:100){
+fff <- function(
+   mat
+  ,tol=1e-3
+  ,Mstep = 100
+  ,ep = 0.05
+  ,learning_rate=0.9
+  ,oo = rep(0.775,2)
+  ,rr = 0.75 
+  ){
+  
+  lr = ep
+  for (step in 1:Mstep){
   ##   a
   ##b  o   d
   ##   c
-  lr = ep*learning_rate^step
+  lr = lr * learning_rate
   po = ff(oo[1],oo[2],mat)
+  cat("Step:", step, "\t-- Est:",po)
+  if (abs(po-rr)<tol) break;
   pa = ff(oo[1],oo[2]+lr,mat)
   pb = ff(oo[1]-lr,oo[2],mat)
   pc = ff(oo[1],oo[2]-lr,mat)
   pd = ff(oo[1]+lr,oo[2],mat)
+  cat("\t--CL:",L,'\t--OO:',oo,'\n')
   
   L = c(pa, pb, pc, pd)
   s = L- rr
@@ -175,15 +184,16 @@ fff <- function(mat,step = 1
     if (inx == 3 ) oo[2] = oo[2]-lr
     if (inx == 4 ) oo[1] = oo[1]+lr
   }
-cat("Step:", step, "estimate:",po,"\t cirle:",L,'\n')
-if (abs(po-rr)<1e-3) break;
+
+
   }
-  return(po);
+  cat('\n')
+  return(oo);
 }
 
 
 tic = Sys.time()
-fff(mat=mat)
+fff(mat=mat,rr=0.75, oo=rep(rr+0.05,2),tol=0.001)
 toc = Sys.time()
 cat("Sample size:", nrow(mat), '\n')
 toc-tic
